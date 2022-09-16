@@ -14,13 +14,12 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
 
             do
             {
-                Console.WriteLine("\n\n|      OPÇÕES DISPONÍVEIS:      |");
+                Console.WriteLine("\n|      OPÇÕES DISPONÍVEIS:      |");
                 Console.WriteLine("|-------------------------------|");
                 Console.WriteLine("|       1 - Exemplo 1           |");
-                Console.WriteLine("|       2 - Exemplo 2           |");
-                Console.WriteLine("|       3 - Exercicio 1         |");
-                Console.WriteLine("|       4 - Exercicio 2         |");
-                Console.WriteLine("|       5 - Exercicio 3         |");
+                Console.WriteLine("|       2 - Exercicio 1         |");
+                Console.WriteLine("|       3 - Exercicio 2         |");
+                Console.WriteLine("|       4 - Exercicio 3         |");
                 Console.WriteLine("|-------------------------------|");
                 Console.Write("\n| Informe um dos códigos acima: ");
 
@@ -32,15 +31,12 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
                         Exemplo1();
                         break;
                     case 2:
-                        Exemplo2();
-                        break;
-                    case 3:
                         Exercicio1();
                         break;
-                    case 4:
+                    case 3:
                         Exercicio2();
                         break;
-                    case 5:
+                    case 4:
                         Exercicio3();
                         break;
                     default:
@@ -49,8 +45,6 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
 
             } while (controle > 0);
         }
-
-
 
         static void Exemplo1()
         {
@@ -61,11 +55,6 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
                 Console.WriteLine("Informe o código 0 para sair");
                 Int32.TryParse(Console.ReadLine(), out controle);
             }
-        }
-
-        static void Exemplo2()
-        {
-            Console.WriteLine("Exemplo 2");
         }
 
 
@@ -96,11 +85,12 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
             {
                 if (number % 2 != 0)
                 {
-                    Console.WriteLine($"{number}");
+                    Console.Write($"{number}, ");
                 }
                 number++;
             }
         }
+
 
         // EXERCÍCIO 2
         // Escreva um aplicativo que mostre todos os números pares de 1 até 100.
@@ -114,7 +104,7 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
             {
                 if (number % 2 == 0)
                 {
-                    Console.WriteLine($"{number}");
+                    Console.Write($"{number}, ");
                 }
                 number++;
             }
@@ -129,7 +119,7 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
             int limitNumber;
             int number = 1;
 
-            Console.WriteLine("Informe um número limite: ");
+            Console.Write("Informe um número limite: ");
             Int32.TryParse(Console.ReadLine(), out limitNumber);
             Console.WriteLine("Números ímpares: ");
 
@@ -137,43 +127,24 @@ namespace Devs2Blu.ProjetosAula.Aula6Loops
             {
                 if (number % 2 != 0)
                 {
-                    Console.WriteLine($"{number}, ");
+                    Console.Write($"{number}, ");
                 }
                 number++;
 
             }
 
-            Console.WriteLine("Números pares: ");
+            Console.WriteLine("\nNúmeros pares: ");
             number = 1;
             while (number <= limitNumber)
             {
                 if (number % 2 == 0)
                 {
-                    Console.WriteLine($"{number}, ");
+                    Console.Write($"{number}, ");
                 }
                 number++;
 
             }
         }
-
-        /* EXERCÍCIO 4
-         Escreva um programa que pergunte ao usuário quantos alunos tem na sala dele.
-         Em seguida, através de um laço while, pede ao usuário para que entre com as notas de todos os alunos da sala, um por vez.
-         Por fim, o programa mostra a média, aritmética, da turma.
-
-        - quantidade de alunos 
-        - montante
-        - qtd de alunos vai servir pro while rodar
-        - inserir nota ou gerar randomicamente
-        - média aritmética: valor total das notas e divide pela quantidade de alunos na sala
-        */
-        static void Exercicio4()
-        {
-            string numberOfStudents;
-            Console.WriteLine("| Informe o número de alunos na turma: ");
-            numberOfStudents = Console.ReadLine();
-        }
-
     }
 }
 

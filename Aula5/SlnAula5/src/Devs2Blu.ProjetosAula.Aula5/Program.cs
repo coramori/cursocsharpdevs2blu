@@ -11,7 +11,7 @@ namespace Devs2Blu.ProjetosAula.Aula5
     {
         static void Main(string[] args)
         {
-            Exercicio5();
+            Exercicio2();
         }
 
 
@@ -32,13 +32,14 @@ namespace Devs2Blu.ProjetosAula.Aula5
                  */
                 string codigo;
 
-                Console.WriteLine("Escolha um código para ver a descrição");
-                Console.WriteLine("- A21");
-                Console.WriteLine("- A22");
-                Console.WriteLine("- A23");
-                Console.WriteLine("- A24");
-                Console.WriteLine("- A35");
-                Console.WriteLine("- Z16");
+                Console.WriteLine("| Códigos Disponíveis: ");
+                Console.WriteLine("| - A21");
+                Console.WriteLine("| - A22");
+                Console.WriteLine("| - A23");
+                Console.WriteLine("| - A24");
+                Console.WriteLine("| - A35");
+                Console.WriteLine("| - Z16");
+                Console.Write("\n| Digite um código para ver a descrição:");
 
                 codigo = Console.ReadLine();
 
@@ -66,12 +67,8 @@ namespace Devs2Blu.ProjetosAula.Aula5
         }
 
 
-
         static void Exercicio1()
         {
-            /* Crie uma variável chamada "fruta". */
-
-
             string fruta;
 
             Console.WriteLine("| Catálogo de Frutas |");
@@ -118,8 +115,8 @@ namespace Devs2Blu.ProjetosAula.Aula5
 
             string modeloAutomovel;
             Console.WriteLine("| AUTOMÓVEIS DISPONÍVEIS: |");
-            Console.WriteLine("|     - Carro Hatch       |");
-            Console.WriteLine("|     - Carro Sedan       |");
+            Console.WriteLine("|        - Hatch          |");
+            Console.WriteLine("|        - Sedan          |");
             Console.WriteLine("|     - Motocicleta       |");
             Console.WriteLine("|     - Caminhonete       |");
             Console.Write("\n| Digite o modelo do automóvel para efetuar a compra: ");
@@ -145,153 +142,25 @@ namespace Devs2Blu.ProjetosAula.Aula5
 
         /* EXERCICIO 5
          *  O usuário informa um número entre 1 e 20.
-                     O programa irá gerar números aleatórios entre 1 e 20.
-                        A pontuação do jogo é:
-                        Resultado 7 = 10 pts;
-                        Resultado 14 = 20 pts;
-                        Resultado 21 = 30 pts;
-                        Resultado entre 1 e 6 = 1 pt;
-                        Resultado entre 8 e 13 = 5 pts;
-                        Resultado entre 15 e 20 = 6 pts;
-                        Resultado acima de 20 = 0 pts;
+            O programa irá gerar números aleatórios entre 1 e 20.
+            A pontuação do jogo é:
+            Resultado 7 = 10 pts;
+            Resultado 14 = 20 pts;
+            Resultado 21 = 30 pts;
+            Resultado entre 1 e 6 = 1 pt;
+            Resultado entre 8 e 13 = 5 pts;
+            Resultado entre 15 e 20 = 6 pts;
+            Resultado acima de 20 = 0 pts;
 
-                    1- Utilize o case aninhado para os resultados de intervalos;
-                    2 - Acrescente o round do computador:
-                      a. O computador irá escolher um número entre 1-20 (informar o número escolhido);
-                      b. Gerar um número aleátório entre 1-20, para o computador.(Informar resultado)
-                    */
-
-        /* primeira tentativa
-        static void Exercicio51() {
-
-           
-            const int result7 = 10;
-            const int result14 = 20;
-            const int result21 = 30;
-            const int result1to6 = 1;
-            const int result8to13 = 5;
-            const int result15to20 = 6;
-            const int result20up = 0;
-
-
-            int userNumber, pcNumber, randomNumber;
-            int userResult, pcResult;
-
-            
-
-            Console.Write("| Informe um número entre 1 e 20: ");
-            Int32.TryParse(Console.ReadLine(), out userNumber);
-
-            switch (userNumber)
-            { 
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                    userResult = result1to6;
-                    Console.WriteLine("| Você fez 1 ponto.");
-                    break;
-                case 7:
-                    userResult = result7;
-                    Console.WriteLine("| Você fez 10 pontos.");
-                    break;
-                case 8:
-                case 9:
-                case 10:
-                case 11:
-                case 12:
-                case 13:
-                    userResult = result8to13;
-                    Console.WriteLine("| Você fez 5 pontos.");
-                    break;
-                case 14:
-                    userResult = result14;
-                    Console.WriteLine("| Você fez 20 pontos.");
-                    break;
-                case 15:
-                case 16:
-                case 17:
-                case 18:
-                case 19:
-                case 20:
-                    userResult = result15to20;
-                    Console.WriteLine("| Você fez 6 pontos.");
-                    break;
-                case 21:
-                    userResult = result21;
-                    Console.WriteLine("| Você fez 30 pontos.");
-                    break;                      
-                               
-                case 0:
-                    userResult = result20up;
-                    Console.WriteLine("| Você fez 0 pontos.");
-                    break;
-               
-            }
-
-            Random rd = new Random();
-            pcNumber = rd.Next(1, 20);
-
-            Console.WriteLine($"\n| O computador gerou o número: {pcNumber}.");
-
-            
-            switch (pcNumber)
-            {
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                case 5:
-                case 6:
-                    pcResult = result1to6;
-                    Console.WriteLine("| O computador fez 1 ponto.");
-                    break;
-                case 7:
-                    pcResult = result7;
-                    Console.WriteLine("| O computador fez 10 pontos.");
-                    break;
-                case 8:
-                case 9:
-                case 10:
-                case 11:
-                case 12:
-                case 13:
-                    pcResult = result8to13;
-                    Console.WriteLine("| O computador fez 5 pontos.");
-                    break;
-                case 14:
-                    pcResult = result14;
-                    Console.WriteLine("| O computador fez 20 pontos.");
-                    break;
-                case 15:
-                case 16:
-                case 17:
-                case 18:
-                case 19:
-                case 20:
-                    pcResult = result15to20;
-                    Console.WriteLine("| O computador fez 6 pontos.");
-                    break;
-                case 21:
-                    pcResult = result21;
-                    Console.WriteLine("| O computador fez 30 pontos.");
-                    break;
-
-                case 0:
-                    pcResult = result20up;
-                    Console.WriteLine("| O computador fez 0 pontos.");
-                    break;
-               
-            }
-        }*/
-                     
+            1- Utilize o case aninhado para os resultados de intervalos;
+            2 - Acrescente o round do computador:
+             a. O computador irá escolher um número entre 1-20 (informar o número escolhido);
+             b. Gerar um número aleátório entre 1-20, para o computador.(Informar resultado)
+         */
 
         // uso do i
-        static void Exercicio52() {
-            // Uso do i
-
+        static void Exercicio52()
+        {
             int valor, ptJogador, ptComputador;
             string aux;
             Random rand = new Random();
@@ -484,4 +353,6 @@ namespace Devs2Blu.ProjetosAula.Aula5
             }
 
         }
+    }
+}
 
