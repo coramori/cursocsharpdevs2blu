@@ -14,9 +14,9 @@ namespace Devs2Blu.ProjetosAula.RevisaoCondicionais
         }
 
 
-        // EXERCÍCIO 0
+        // EXERCÍCIO
         // Faça um programa que verifique se um número é impar. (fórmula n-n/2*2=0)
-        static void Exercicio0()
+        static void Exercicio()
         {
             Console.WriteLine("| Exercício 1 : Verifica se um número é ímpar |");
 
@@ -158,33 +158,6 @@ namespace Devs2Blu.ProjetosAula.RevisaoCondicionais
             }
         }
 
-        /*
-        /* EXERCÍCIO 5
-         * Escreva um programa para ler 3 valores inteiros(considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
-        static void Exercicio 5(){ }
-
-        /* EXERCÍCIO 6 
-        Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa,
-        construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
-        - para homens: (72.2 * altura) - 58
-        - para mulheres:(62.1 * altura) - 44.7
         
-        static void Exercicio 6(){ }
-
-        /* EXERCÍCIO 7 
-        static void Exercicio 7(){ }
-
-        /* EXERCÍCIO 8 
-        static void Exercicio 8(){ }
-
-        /* EXERCÍCIO 9 
-        static void Exercicio 9(){ }
-
-        /* EXERCÍCIO 10 
-        static void Exercicio 10(){ }
-
-        /* EXERCÍCIO 11 
-        static void Exercicio 11(){ }
-        */
     }
 }
