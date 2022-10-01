@@ -27,17 +27,17 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main
                 if (opcaoMenuCadastros.Equals((int)MenuEnums.SAIR))
                 {
                     Console.Clear();
-                    Console.WriteLine("------- Gerenciamento de Clínicas: -------");
-                    Console.WriteLine("------------------------------------------");
-                    Console.WriteLine("----- 10- Cadastro de Pacientes      -----");
-                    Console.WriteLine("----- 20- Cadastro de Médicos        -----");
-                    Console.WriteLine("----- 30- Cadastro de Recepcionistas -----");
-                    Console.WriteLine("----- 40- Cadastro de Fornecedores   -----");
-                    Console.WriteLine("----- 50- Agenda                     -----");
-                    Console.WriteLine("----- 60- Prontuário                 -----");
-                    Console.WriteLine("----- 70- Financeiro                 -----");
-                    Console.WriteLine("------------------------------------------");
-                    Console.WriteLine("---------------  0 - Sair  ---------------");
+                    Console.WriteLine("╔═══════ GERENCIAMENTO DE CLÍNICAS ═══════╗");
+                    Console.WriteLine("║ ═══════════════════════════════════════ ║");
+                    Console.WriteLine("║      10- Cadastro de Pacientes          ║");
+                    Console.WriteLine("║      20- Cadastro de Médicos            ║");
+                    Console.WriteLine("║      30- Cadastro de Recepcionistas     ║");
+                    Console.WriteLine("║      40- Cadastro de Fornecedores       ║");
+                    Console.WriteLine("║      50- Agenda                         ║");
+                    Console.WriteLine("║      60- Prontuário                     ║");
+                    Console.WriteLine("║      70- Financeiro                     ║");
+                    Console.WriteLine("║ ═══════════════════════════════════════ ║");
+                    Console.WriteLine("╚═══════════════  0 - SAIR  ══════════════╝");
                     Console.Write("\nDigite o código da opção que deseja acessar: ");
                     Int32.TryParse(Console.ReadLine(), out opcao);
                 }

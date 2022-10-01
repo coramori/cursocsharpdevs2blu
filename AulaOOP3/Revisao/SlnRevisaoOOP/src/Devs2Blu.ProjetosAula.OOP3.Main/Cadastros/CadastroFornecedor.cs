@@ -31,12 +31,12 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
             foreach (Fornecedor fornecedor in Program.Mock.ListaFornecedores)
             {
-                Console.WriteLine("-----------------");
+                Console.WriteLine("════════════════════════════════════════");
                 Console.WriteLine($"Fornecedor: {fornecedor.CodigoFornecedor}");
                 Console.WriteLine($"Nome: {fornecedor.Nome}");
                 Console.WriteLine($"CPF: {fornecedor.CGCCPF}");
                 Console.WriteLine($"Tipo do Fornecedor: {fornecedor.TipoFornecedor}");
-                Console.WriteLine("-----------------");
+                Console.WriteLine("════════════════════════════════════════");
             }
             Console.ReadLine();
         }
@@ -64,13 +64,15 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         {
             Int32 opcao;
             Console.Clear();
-            Console.WriteLine("-------  Cadastro de Fornecedores   -------");
-            Console.WriteLine("------- 1- Lista de Fornecedores    -------");
-            Console.WriteLine("------- 2- Cadastro de Fornecedores -------");
-            Console.WriteLine("------- 3- Alterar Fornecedores     -------");
-            Console.WriteLine("------- 4- Excluir Fornecedores     -------");
-            Console.WriteLine("----------------------------------------");
-            Console.WriteLine("------------------ 0- Sair -------------");
+            Console.WriteLine("╔═══════ CADASTRO DE FORNECEDORES ═══════╗");
+            Console.WriteLine("║ ══════════════════════════════════════ ║");
+            Console.WriteLine("║       1- Lista de Fornecedores         ║");
+            Console.WriteLine("║       2- Cadastro de Fornecedores      ║");
+            Console.WriteLine("║       3- Alterar Fornecedores          ║");
+            Console.WriteLine("║       4- Excluir Fornecedores          ║");
+            Console.WriteLine("║ ══════════════════════════════════════ ║");
+            Console.WriteLine("╚═══════════════ 0- SAIR ════════════════╝");
+            Console.Write("\nDigite o código da opção que deseja acessar: ");
             Int32.TryParse(Console.ReadLine(), out opcao);
             return opcao;
         }
@@ -107,7 +109,8 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Fornecedor fornecedor;
             int codigoFornecedor;
 
-            Console.WriteLine("Informe o fornecedor que deseja alterar: ");
+            Console.WriteLine("| Digite o código do fornecedor que deseja alterar: \n");
+
             ListarFornecedoresByCodeAndName();
 
             Int32.TryParse(Console.ReadLine(), out codigoFornecedor);

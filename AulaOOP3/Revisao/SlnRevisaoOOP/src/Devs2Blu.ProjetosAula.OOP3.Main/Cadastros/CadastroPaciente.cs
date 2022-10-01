@@ -33,12 +33,12 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
-                Console.WriteLine("-----------------");
+                Console.WriteLine("════════════════");
                 Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
                 Console.WriteLine($"Nome: {paciente.Nome}");
                 Console.WriteLine($"CPF: {paciente.CGCCPF}");
                 Console.WriteLine($"Convênio: {paciente.Convenio}");
-                Console.WriteLine("-----------------");
+                Console.WriteLine("════════════════");
             }
             Console.ReadLine();
         }
@@ -66,14 +66,15 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         {
             Int32 opcao;
             Console.Clear();
-            Console.WriteLine("╔══════  CADASTRO DE PACIENTES  ════╗");
-            Console.WriteLine("║                                   ║");
+            Console.WriteLine("╔══════ CADASTRO DE PACIENTES ══════╗");
+            Console.WriteLine("║ ═════════════════════════════════ ║");
             Console.WriteLine("║       1- Lista de Pacientes       ║");
             Console.WriteLine("║       2- Cadastro de Pacientes    ║");
             Console.WriteLine("║       3- Alterar Pacientes        ║");
             Console.WriteLine("║       4- Excluir Pacientes        ║");
-            Console.WriteLine("║                                   ║");
-            Console.WriteLine("╚═════════════ 0- Sair ═════════════╝");
+            Console.WriteLine("║ ═════════════════════════════════ ║");
+            Console.WriteLine("╚═════════════ 0- SAIR ═════════════╝");
+            Console.Write("\nDigite o código da opção que deseja acessar: ");
             Int32.TryParse(Console.ReadLine(), out opcao);
             return opcao;
         }
@@ -110,7 +111,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Paciente paciente;
             int codigoPaciente;
 
-            Console.WriteLine("Informe o paciente que deseja alterar: ");
+            Console.WriteLine("| Digite o código do paciente que deseja alterar: \n");
             ListarPacientesByCodeAndName();
 
             Int32.TryParse(Console.ReadLine(), out codigoPaciente);
@@ -164,7 +165,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
             Console.WriteLine("| Lista de Pacientes: ");
             ListarPacientesByCodeAndName();
-            Console.WriteLine("Informe o código do paciente que deseja excluir: ");
+            Console.WriteLine("| Informe o código do paciente que deseja excluir: ");
             Int32.TryParse(Console.ReadLine(), out codigoPaciente);
 
             paciente = Program.Mock.ListaPacientes.Find(p => p.CodigoPaciente == codigoPaciente);

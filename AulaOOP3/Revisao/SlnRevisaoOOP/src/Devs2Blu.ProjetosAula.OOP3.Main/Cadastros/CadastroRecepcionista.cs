@@ -31,12 +31,12 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
             foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
             {
-                Console.WriteLine("-----------------");
+                Console.WriteLine("═════════════════════");
                 Console.WriteLine($"Recepcionista: {recepcionista.CodigoRecepcionista}");
                 Console.WriteLine($"Nome: {recepcionista.Nome}");
                 Console.WriteLine($"CPF: {recepcionista.CGCCPF}");
                 Console.WriteLine($"Setor: {recepcionista.Setor}");
-                Console.WriteLine("-----------------");
+                Console.WriteLine("═════════════════════");
             }
             Console.ReadLine();
         }
@@ -64,13 +64,15 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         {
             Int32 opcao;
             Console.Clear();
-            Console.WriteLine("-------   Cadastro de Recepcionistas  -------");
-            Console.WriteLine("------- 1- Lista de Recepcionistas    -------");
-            Console.WriteLine("------- 2- Cadastro de Recepcionistas -------");
-            Console.WriteLine("------- 3- Alterar Recepcionistas     -------");
-            Console.WriteLine("------- 4- Excluir Recepcionistas     -------");
-            Console.WriteLine("---------------------------------------------");
-            Console.WriteLine("------------------ 0- Sair ------------------");
+            Console.WriteLine("╔═══════ CADASTRO DE RECEPCIONISTA ═══════╗");
+            Console.WriteLine("║ ═══════════════════════════════════════ ║");
+            Console.WriteLine("║      1- Lista de Recepcionistas         ║");
+            Console.WriteLine("║      2- Cadastro de Recepcionistas      ║");
+            Console.WriteLine("║      3- Alterar Recepcionistas          ║");
+            Console.WriteLine("║      4- Excluir Recepcionistas          ║");
+            Console.WriteLine("║ ═══════════════════════════════════════ ║");
+            Console.WriteLine("╚═══════════════ 0- SAIR ═════════════════╝");
+            Console.Write("\nDigite o código da opção que deseja acessar: ");
             Int32.TryParse(Console.ReadLine(), out opcao);
             return opcao;
         }
@@ -107,7 +109,8 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Recepcionista recepcionista;
             int codigoRecepcionista;
 
-            Console.WriteLine("Informe o recepcionista que deseja alterar: ");
+            Console.WriteLine("| Digite o código do recepcionista que deseja alterar: \n");
+
             ListarRecepcionistasByCodeAndName();
 
             Int32.TryParse(Console.ReadLine(), out codigoRecepcionista);

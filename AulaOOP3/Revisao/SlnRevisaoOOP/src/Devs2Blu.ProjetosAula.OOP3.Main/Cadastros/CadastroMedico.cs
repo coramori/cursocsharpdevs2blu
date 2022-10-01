@@ -31,13 +31,13 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 
             foreach (Medico medico in Program.Mock.ListaMedicos)
             {
-                Console.WriteLine("-----------------");
+                Console.WriteLine("═════════════════════════════");
                 Console.WriteLine($"Médico: {medico.CodigoMedico}");
                 Console.WriteLine($"Nome: {medico.Nome}");
                 Console.WriteLine($"CPF: {medico.CGCCPF}");
                 Console.WriteLine($"CRM: {medico.CRM}");
                 Console.WriteLine($"Especialidade: {medico.Especialidade}");
-                Console.WriteLine("-----------------");
+                Console.WriteLine("═════════════════════════════");
             }
             Console.ReadLine();
         }
@@ -66,13 +66,15 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Int32 opcao;
 
             Console.Clear();
-            Console.WriteLine("------ Cadastro de Médicos ------");
-            Console.WriteLine("------ 1- Lista de Médicos ------");
-            Console.WriteLine("------ 2- Cadastro de Médicos -----");
-            Console.WriteLine("------ 3- Alterar Médicos ------");
-            Console.WriteLine("------ 4- Excluir Médicos ------");
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine("------------- 0- Sair ------------");
+            Console.WriteLine("╔══════ CADASTRO DE MÉDICOS ══════╗");
+            Console.WriteLine("║ ═══════════════════════════════ ║");
+            Console.WriteLine("║       1- Lista de Médicos       ║");
+            Console.WriteLine("║       2- Cadastro de Médicos    ║");
+            Console.WriteLine("║       3- Alterar Médicos        ║");
+            Console.WriteLine("║       4- Excluir Médicos        ║");
+            Console.WriteLine("║ ═══════════════════════════════ ║");
+            Console.WriteLine("╚════════════ 0- SAIR ════════════╝");
+            Console.Write("\nDigite o código da opção que deseja acessar: ");
             Int32.TryParse(Console.ReadLine(), out opcao);
             return opcao;
         }
@@ -112,7 +114,8 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             Medico medico;
             int codigoMedico;
 
-            Console.WriteLine("Informe o médico que deseja alterar: ");
+            Console.WriteLine("| Digite o código do médico que deseja alterar: \n");
+
             ListarMedicosByCodeAndName();
 
             Int32.TryParse(Console.ReadLine(), out codigoMedico);
