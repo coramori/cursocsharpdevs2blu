@@ -15,7 +15,7 @@ namespace Devs2Blu.ProjetosAula.OOP3.Models.Model
 
         public String Especialidade { get; set; }
 
-        public Medico(int i)
+        public Medico()
         {
             TipoPessoa = TipoPessoa.PF;
         }
