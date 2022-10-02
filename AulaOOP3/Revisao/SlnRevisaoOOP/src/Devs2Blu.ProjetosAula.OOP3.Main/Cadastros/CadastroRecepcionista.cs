@@ -135,11 +135,11 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                         break;
                     case "02":
                         Console.WriteLine("Informe um novo CPF: ");
-                        recepcionista.Nome = Console.ReadLine();
+                        recepcionista.CGCCPF = Console.ReadLine();
                         break;
                     case "03":
                         Console.WriteLine("Informe um novo setor: ");
-                        recepcionista.Nome = Console.ReadLine();
+                        recepcionista.Setor = Console.ReadLine();
                         break;
                     default:
                         alterar = false;

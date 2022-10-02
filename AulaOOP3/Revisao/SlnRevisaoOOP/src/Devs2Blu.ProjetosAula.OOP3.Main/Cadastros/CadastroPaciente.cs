@@ -136,11 +136,11 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                         break;
                     case "02":
                         Console.WriteLine("Informe um novo CPF: ");
-                        paciente.Nome = Console.ReadLine();
+                        paciente.CGCCPF = Console.ReadLine();
                         break;
                     case "03":
                         Console.WriteLine("Informe um novo convênio: ");
-                        paciente.Nome = Console.ReadLine();
+                        paciente.Convenio = Console.ReadLine();
                         break;
                     default:
                         alterar = false;

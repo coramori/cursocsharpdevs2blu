@@ -135,11 +135,11 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
                         break;
                     case "02":
                         Console.WriteLine("Informe um novo CPF: ");
-                        fornecedor.Nome = Console.ReadLine();
+                        fornecedor.CGCCPF = Console.ReadLine();
                         break;
                     case "03":
                         Console.WriteLine("Informe um novo tipo de fornecedor: ");
-                        fornecedor.Nome = Console.ReadLine();
+                        fornecedor.TipoFornecedor = Console.ReadLine();
                         break;
                     default:
                         alterar = false;
