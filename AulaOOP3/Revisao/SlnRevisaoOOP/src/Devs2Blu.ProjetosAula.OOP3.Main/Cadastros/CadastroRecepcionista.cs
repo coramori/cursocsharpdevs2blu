@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using Devs2Blu.ProjetosAula.OOP3.Main.Interfaces;
 using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+=======
+﻿using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
 using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -9,13 +13,18 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
+<<<<<<< HEAD
     public class CadastroRecepcionista : IMenuCadastro
+=======
+    internal class CadastroRecepcionista
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
     {
         public CadastroRecepcionista()
         {
 
         }
 
+<<<<<<< HEAD
         private void ListarRecepcionistasByCodeAndName()
         {
             foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
@@ -26,21 +35,60 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
 
         private void ListarRecepcionistas()
+=======
+        public void MenuCadastro()
+        {
+            Int32 opcao;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("-------   Cadastro de Recepcionistas  -------");
+                Console.WriteLine("------- 1- Lista de Recepcionistas    -------");
+                Console.WriteLine("------- 2- Cadastro de Recepcionistas -------");
+                Console.WriteLine("------- 3- Alterar Recepcionistas     -------");
+                Console.WriteLine("---------------------------------------------");
+                Console.WriteLine("------------------ 0- Sair ------------------");
+                Int32.TryParse(Console.ReadLine(), out opcao);
+
+                switch (opcao)
+                {
+                    case (int)MenuEnums.LISTAR:
+                        ListarRecepcionista();
+                        break;
+                    default:
+                        break;
+                }
+
+            } while (!opcao.Equals((int)MenuEnums.SAIR));
+        }
+
+        public void ListarRecepcionista()
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
         {
             Console.Clear();
 
             foreach (Recepcionista recepcionista in Program.Mock.ListaRecepcionistas)
             {
+<<<<<<< HEAD
                 Console.WriteLine("═════════════════════");
+=======
+                Console.WriteLine("-----------------");
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
                 Console.WriteLine($"Recepcionista: {recepcionista.CodigoRecepcionista}");
                 Console.WriteLine($"Nome: {recepcionista.Nome}");
                 Console.WriteLine($"CPF: {recepcionista.CGCCPF}");
                 Console.WriteLine($"Setor: {recepcionista.Setor}");
+<<<<<<< HEAD
                 Console.WriteLine("═════════════════════");
+=======
+                Console.WriteLine("-----------------");
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
             }
             Console.ReadLine();
         }
 
+<<<<<<< HEAD
         private void CadastrarRecepcionista(Recepcionista novoRecepcionista)
         {
             Program.Mock.ListaRecepcionistas.Add(novoRecepcionista);
@@ -173,5 +221,22 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
             ExcluirRecepcionista(recepcionista);
         }
         #endregion
+=======
+        public void CadastrarRecepcionista(Recepcionista novoRecepcionista)
+        {
+            Program.Mock.ListaRecepcionistas.Add(novoRecepcionista);
+
+        }
+
+        public void AlterarRecepcionista()
+        {
+
+        }
+
+        public void ExcluirRecepcionista()
+        {
+
+        }
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
     }
 }

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using Devs2Blu.ProjetosAula.OOP3.Main.Interfaces;
 using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+=======
+﻿using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
 using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 using System;
 using System.Collections.Generic;
@@ -9,13 +13,18 @@ using System.Threading.Tasks;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
+<<<<<<< HEAD
     public class CadastroMedico : IMenuCadastro
+=======
+    internal class CadastroMedico
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
     {
         public CadastroMedico()
         {
 
         }
 
+<<<<<<< HEAD
         private void ListarMedicosByCodeAndName()
         {
             foreach (Medico medico in Program.Mock.ListaMedicos)
@@ -26,27 +35,70 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
 
         private void ListarMedicos()
+=======
+        public void MenuCadastro()
+        {
+            Int32 opcao;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("------ Cadastro de Médicos ------");
+                Console.WriteLine("------ 1- Lista de Médicos ------");
+                Console.WriteLine("------ 2- Cadastro de Médicos -----");
+                Console.WriteLine("------ 3- Alterar Médicos ------");
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("------------- 0- Sair ------------");
+                Int32.TryParse(Console.ReadLine(), out opcao);
+
+                switch (opcao)
+                {
+                    case (int)MenuEnums.LISTAR:
+                        ListarMedicos();
+                        break;
+                    default:
+                        break;
+                }
+
+            } while (!opcao.Equals((int)MenuEnums.SAIR));
+        }
+
+        public void ListarMedicos()
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
         {
             Console.Clear();
 
             foreach (Medico medico in Program.Mock.ListaMedicos)
             {
+<<<<<<< HEAD
                 Console.WriteLine("═════════════════════════════");
+=======
+                Console.WriteLine("-----------------");
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
                 Console.WriteLine($"Médico: {medico.CodigoMedico}");
                 Console.WriteLine($"Nome: {medico.Nome}");
                 Console.WriteLine($"CPF: {medico.CGCCPF}");
                 Console.WriteLine($"CRM: {medico.CRM}");
                 Console.WriteLine($"Especialidade: {medico.Especialidade}");
+<<<<<<< HEAD
                 Console.WriteLine("═════════════════════════════");
+=======
+                Console.WriteLine("-----------------");
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
             }
             Console.ReadLine();
         }
 
+<<<<<<< HEAD
         private void CadastrarMedicos(Medico novoMedico)
+=======
+        public void CadastrarMedico(Medico novoMedico)
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
         {
             Program.Mock.ListaMedicos.Add(novoMedico);
         }
 
+<<<<<<< HEAD
         private void AlterarMedico(Medico medico)
         {
             var pact = Program.Mock.ListaMedicos.Find(p => p.CodigoMedico == medico.CodigoMedico);
@@ -184,3 +236,16 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         #endregion
     }
 }
+=======
+        public void AlterarMedico()
+        {
+
+        }
+
+        public void ExcluirMedico()
+        {
+
+        }
+    }
+}
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d

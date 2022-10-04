@@ -15,7 +15,11 @@ namespace Devs2Blu.ProjetosAula.OOP3.Models.Model
 
         public String Especialidade { get; set; }
 
+<<<<<<< HEAD
         public Medico()
+=======
+        public Medico(int i)
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
         {
             TipoPessoa = TipoPessoa.PF;
         }

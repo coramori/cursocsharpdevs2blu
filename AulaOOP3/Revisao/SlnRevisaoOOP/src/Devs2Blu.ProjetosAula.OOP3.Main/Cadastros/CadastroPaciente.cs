@@ -1,23 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+<<<<<<< HEAD
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using Devs2Blu.ProjetosAula.OOP3.Main.Interfaces;
+=======
+using System.Text;
+using System.Threading.Tasks;
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
 using Devs2Blu.ProjetosAula.OOP3.Main.Utils;
 using Devs2Blu.ProjetosAula.OOP3.Main.Utils.Enums;
 using Devs2Blu.ProjetosAula.OOP3.Models.Model;
 
 namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
 {
+<<<<<<< HEAD
     public class CadastroPaciente : IMenuCadastro
+=======
+    public class CadastroPaciente
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
     {
         public CadastroPaciente()
         {
 
         }
 
+<<<<<<< HEAD
         private void ListarPacientesByCodeAndName()
         {
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
@@ -28,21 +38,60 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         }
 
         private void ListarPacientes()
+=======
+        public void MenuCadastro()
+        {
+            Int32 opcao;
+            
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("-------  Cadastro de Pacientes   -------");
+                Console.WriteLine("------- 1- Lista de Pacientes    -------");
+                Console.WriteLine("------- 2- Cadastro de Pacientes -------");
+                Console.WriteLine("------- 3- Alterar Pacientes     -------");
+                Console.WriteLine("----------------------------------------");
+                Console.WriteLine("------------------ 0- Sair -------------");
+                Int32.TryParse(Console.ReadLine(), out opcao);
+
+                switch (opcao)
+                {
+                    case (int)MenuEnums.LISTAR:
+                        ListarPacientes();
+                        break;
+                    default:
+                        break;
+                }
+
+            } while (!opcao.Equals((int)MenuEnums.SAIR)) ;
+        }
+
+        public void ListarPacientes()
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
         {
             Console.Clear();
 
             foreach (Paciente paciente in Program.Mock.ListaPacientes)
             {
+<<<<<<< HEAD
                 Console.WriteLine("════════════════");
+=======
+                Console.WriteLine("-----------------");
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
                 Console.WriteLine($"Paciente: {paciente.CodigoPaciente}");
                 Console.WriteLine($"Nome: {paciente.Nome}");
                 Console.WriteLine($"CPF: {paciente.CGCCPF}");
                 Console.WriteLine($"Convênio: {paciente.Convenio}");
+<<<<<<< HEAD
                 Console.WriteLine("════════════════");
+=======
+                Console.WriteLine("-----------------");
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
             }
             Console.ReadLine();
         }
 
+<<<<<<< HEAD
         private void CadastrarPaciente(Paciente novoPaciente)
         {
             Program.Mock.ListaPacientes.Add(novoPaciente);
@@ -177,5 +226,25 @@ namespace Devs2Blu.ProjetosAula.OOP3.Main.Cadastros
         #endregion
 
 
+=======
+        public void CadastrarPaciente(Paciente novoPaciente)
+        {
+            Console.Clear();
+
+            novoPaciente = new Paciente();
+
+            Program.Mock.ListaPacientes.Add(novoPaciente);
+        }
+
+        public void AlterarPaciente()
+        {
+
+        }
+
+        public void ExcluirPaciente(Paciente paciente)
+        {
+            
+        }
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
     }
 }
