@@ -46,7 +46,13 @@
     <Compile Include="Cadastros\CadastroFornecedor.cs" />
     <Compile Include="Cadastros\CadastroMedico.cs" />
     <Compile Include="Cadastros\CadastroPaciente.cs" />
+<<<<<<< HEAD
+    <Compile Include="Cadastros\CadastroPadrao.cs" />
     <Compile Include="Cadastros\CadastroRecepcionista.cs" />
+    <Compile Include="Interfaces\IMenuCadastro.cs" />
+=======
+    <Compile Include="Cadastros\CadastroRecepcionista.cs" />
+>>>>>>> 3a5c0bb9e7606b27853fd8f0bed891eeb129170d
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Enums\MenuEnums.cs" />
