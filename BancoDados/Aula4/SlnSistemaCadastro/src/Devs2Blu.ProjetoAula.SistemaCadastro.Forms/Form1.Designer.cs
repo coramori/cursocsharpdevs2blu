@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gpFormCadastro = new System.Windows.Forms.GroupBox();
+            this.txtCGCCPF = new System.Windows.Forms.MaskedTextBox();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.gpEnderecoCadastro = new System.Windows.Forms.GroupBox();
@@ -61,7 +62,8 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
-            this.txtCGCCPF = new System.Windows.Forms.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.gpFormCadastro.SuspendLayout();
             this.gpEnderecoCadastro.SuspendLayout();
             this.gpTipoPessoa.SuspendLayout();
@@ -88,6 +90,14 @@
             this.gpFormCadastro.TabIndex = 3;
             this.gpFormCadastro.TabStop = false;
             this.gpFormCadastro.Text = "Formulário de Cadastro";
+            // 
+            // txtCGCCPF
+            // 
+            this.txtCGCCPF.Location = new System.Drawing.Point(74, 57);
+            this.txtCGCCPF.Mask = "000.000.000-00";
+            this.txtCGCCPF.Name = "txtCGCCPF";
+            this.txtCGCCPF.Size = new System.Drawing.Size(100, 20);
+            this.txtCGCCPF.TabIndex = 17;
             // 
             // btnLimpar
             // 
@@ -341,6 +351,7 @@
             this.gridPacientes.ReadOnly = true;
             this.gridPacientes.Size = new System.Drawing.Size(411, 281);
             this.gridPacientes.TabIndex = 5;
+            this.gridPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridPacientes_CellContentClick);
             // 
             // fileToolStripMenuItem
             // 
@@ -377,6 +388,7 @@
             this.btnExcluir.Size = new System.Drawing.Size(53, 53);
             this.btnExcluir.TabIndex = 14;
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnInfo
             // 
@@ -390,20 +402,33 @@
             this.btnInfo.Size = new System.Drawing.Size(57, 53);
             this.btnInfo.TabIndex = 16;
             this.btnInfo.UseVisualStyleBackColor = false;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
-            // txtCGCCPF
+            // label11
             // 
-            this.txtCGCCPF.Location = new System.Drawing.Point(74, 57);
-            this.txtCGCCPF.Mask = "000.000.000-00";
-            this.txtCGCCPF.Name = "txtCGCCPF";
-            this.txtCGCCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCGCCPF.TabIndex = 17;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(19, 402);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Celta";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(700, 361);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Alterar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 652);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.gpConteudo);
@@ -463,6 +488,8 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.MaskedTextBox txtCGCCPF;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button1;
     }
 }
 

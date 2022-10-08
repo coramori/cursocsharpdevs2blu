@@ -1,5 +1,4 @@
-﻿using Devs2Blu.ProjetoAula.SistemaCadastro.Forms.Data;
-using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model;
+﻿/*using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -8,20 +7,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
+namespace Devs2Blu.ProjetoAula.SistemaCadastro.Forms.Data
 {
-    public class PacienteRepository
+    public class EnderecoRepository
     {
-        public Paciente Save(Paciente paciente)
+        public Endereco Save(Endereco endereco)
         {
             MySqlConnection conn = ConnectionMySQL.GetConnection();
 
             try
             {
+                endereco.Pessoa.Id = SavePessoa(endereco, conn);
 
-                paciente.Pessoa.Id = SavePessoa(paciente, conn);
-
-                return paciente;
+                return endereco;
             }
             catch (MySqlException myExc)
             {
@@ -30,15 +28,14 @@ namespace Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data
             }
         }
 
-        private Int32 SavePessoa(Paciente paciente, MySqlConnection conn)
+        private Int32 SavePessoa(Endereco endereco, MySqlConnection conn)
         {
             try
             {
                 MySqlCommand cmd = new MySqlCommand(SQL_INSERT_PESSOA, conn);
-                cmd.Parameters.Add("@nome", MySqlDbType.VarChar, 50).Value = paciente.Pessoa.Nome;
-                cmd.Parameters.Add("@cgccpf", MySqlDbType.VarChar, 25).Value = paciente.Pessoa.CGCCPF;
-                cmd.Parameters.Add("@tipopessoa", MySqlDbType.Enum).Value = paciente.Pessoa.TipoPessoa;
-
+                cmd.Parameters.Add("@nome", MySqlDbType.VarChar).Value = endereco.Pessoa.Nome;
+                cmd.Parameters.Add("cgccpg", MySqlDbType.VarChar, 25).Value = endereco.Pessoa.CGCCPF;
+                cmd.Parameters.Add("tipopessoa", MySqlDbType.Enum).Value = endereco.Pessoa.TipoPessoa;
                 cmd.ExecuteNonQuery();
                 return (Int32)cmd.LastInsertedId;
             }
@@ -94,21 +91,21 @@ VALUES
 @bairro,
 @cidade,
 @uf)";
-        private const String SQL_INSERT_PACIENTE = @"INSERT INTO paciente
+        private const String SQL_INSERT_ENDERECO = @"INSERT INTO endereco
 (id_pessoa,
 id_convenio,
 numero_prontuario,
-paciente_risco,
+endereco_risco,
 flstatus,
 flobito)
 VALUES
 (@id_pessoa,
 @id_convenio,
 @numero_prontuario,
-@paciente_risco,
+@endereco_risco,
 'A',
 0)";
         private const String SQL_SELECT_PESSOAS = @"SELECT id, nome, cgccpf, flstatus from pessoa";
         #endregion
     }
-}
+}*/

@@ -1,4 +1,5 @@
 ﻿using Devs2Blu.ProjetoAula.SistemaCadastro.Forms.Data;
+using Devs2Blu.ProjetosAula.SistemaCadastro.Forms.Data;
 using Devs2Blu.ProjetosAula.SistemaCadastro.Models.Model;
 using MySql.Data.MySqlClient;
 using System;
@@ -22,6 +23,7 @@ namespace Devs2Blu.ProjetoAula.SistemaCadastro.Forms
         public Form1()
         {
             InitializeComponent();
+            PopulaDataGridPessoa();
         }
 
         #region Methods
@@ -111,13 +113,27 @@ namespace Devs2Blu.ProjetoAula.SistemaCadastro.Forms
                 if (pacienteResult.Pessoa.Id > 0)
                 {
                     MessageBox.Show($"Pessoa {paciente.Pessoa.Id} - {paciente.Pessoa.Nome} salva com sucesso!", "Adicionar Pessoa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    
+                    PopulaDataGridPessoa();
                 }
             }
         }
+
         #endregion
 
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cora", "Desenvolvedores");
+        }
 
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gridPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 
