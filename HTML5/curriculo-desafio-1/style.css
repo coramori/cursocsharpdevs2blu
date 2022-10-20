@@ -57,7 +57,7 @@ header figure figcaption {
 .profile-pic img {
   border-radius: 50%;
   position: absolute;
-  width: 6rem;
+  width: 8rem;
 }
 
 .wrapper {
@@ -69,8 +69,12 @@ header figure figcaption {
   margin-bottom: 3em;
 }
 
+.name-title {
+  font-size: 20px;
+}
+
 .content-top {
-  padding-bottom: 20px;
+  padding-bottom: 55px;
   display: flex;
   margin: auto;
   align-items: center;
@@ -80,6 +84,11 @@ header figure figcaption {
 
 .about-me {
   color: #463c3c;
+  font-size: 15px;
+}
+
+.contact {
+  padding-top: 10px;
   font-size: 15px;
 }
 
@@ -104,26 +113,30 @@ a:visited {
 div.content {
   padding: 0.5em;
   text-align: justify;
-  margin-top: 1em;
+  margin-top: 0.2em;
 }
 
 div.content p {
   text-align: justify;
 }
 
-.content-title {
+.certificates-title,
+.experiences-title,
+.schooling-title {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
-.certificate-name {
+.certificate-name,
+.experience,
+.schooling {
   padding-top: 10px;
+  padding-bottom: 10px;
   text-align: left;
   font-weight: bold;
   font-size: 18px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #463c3c;
   display: flex;
   text-indent: 10px;
@@ -134,14 +147,18 @@ div.content p {
 }
 
 .certificate-name,
-.certificate-company {
+.certificate-company,
+.experience,
+.schooling {
   background-color: rgb(248, 215, 209);
   color: #463c3c;
 }
 
-.certificate-description {
+.certificate-description,
+.experience-description,
+.schooling-description {
   padding-top: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   text-indent: 20px;
 }
 
