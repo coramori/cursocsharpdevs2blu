@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Slimespooky Outline';
-    src: url('fonts/Slimespooky-Outline.eot');
-    src: url('fonts/Slimespooky-Outline.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Slimespooky-Outline.woff2') format('woff2'),
-         url('fonts/Slimespooky-Outline.woff') format('woff'),
-         url('fonts/Slimespooky-Outline.ttf')  format('truetype'),
-         url('fonts/Slimespooky-Outline.svg#Slimespooky Outline') format('svg');
-}
