@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  height: 100px;
+  background-color: rgb(221, 221, 221);
+  margin-bottom: 80px;
+  display: flex;
+  box-shadow: 4px 2px 8px rgb(202, 202, 202);
+}
+
+header figure {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 20px;
+}
+
+header figure figcaption {
+  margin-left: 20px;
+  font-size: smaller;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.highlight-pic {
+  width: 50rem;
+  margin: auto;
+}
+
+.highlight-pic img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 4px 2px 8px rgb(202, 202, 202);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.courses-list li {
+  background-color: rgb(221, 221, 221);
+  border-radius: 50px;
+}
+
+.list-title {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 4px 2px 8px rgb(202, 202, 202);
+}
+
+.courses-list p {
+  text-align: justify;
+  margin: 5px;
+  text-indent: 20px;
+  padding: 5px 0 50px;
+}
+
+.courses-list {
+  border-radius: 10px;
+  list-style: none;
+}

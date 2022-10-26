@@ -1,0 +1,6 @@
+E:\Devs2Blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model\bin\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.dll
+E:\Devs2Blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model\bin\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.pdb
+E:\Devs2Blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.csproj.AssemblyReference.cache
+E:\Devs2Blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.csproj.CoreCompileInputs.cache
+E:\Devs2Blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.dll
+E:\Devs2Blu\BancoDados\SistemaAgendaContatos\AgendaContatosSln\src\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model\obj\Debug\Devs2Blu.ProjetosAula.Integracao.AgendaContatos.Model.pdb
