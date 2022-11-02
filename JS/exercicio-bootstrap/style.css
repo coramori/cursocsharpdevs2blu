@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+.highlight-pic {
+  width: 50rem;
+  margin: auto;
+}
+
+.highlight-pic img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 4px 2px 8px rgb(202, 202, 202);
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgb(63, 63, 63);
+}
+
+main {
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.main-text {
+  text-align: justify;
+  padding-bottom: 20px;
+  color: rgb(63, 63, 63);
+}
+
+table {
+  box-shadow: 4px 2px 8px rgb(202, 202, 202);
+}
+
+.main-table {
+  margin: auto;
+  align-content: center;
+}
+
+.table {
+  width: 600px;
+  text-align: center;
+  color: rgb(63, 63, 63);
+}
+
+th {
+  padding-left: 10px;
+}
+
+.cursos {
+  flex-direction: column;
+  justify-content: center;
+  width: 50rem;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.cursos .main-text {
+  text-align: justify;
+  padding-bottom: 20px;
+  color: rgb(63, 63, 63);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  height: 70px;
+  background-color: #999;
+  justify-content: space-between;
+}
+
+copyright {
+  width: 100%;
+  padding-left: 20px;
+  justify-content: left;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+footer p {
+  margin-left: 20px;
+  width: 100%;
+  padding-top: 30px;
+  color: white;
+  font-size: 0.7em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  @media (max-width: 600px) {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.social {
+  width: 50%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+a {
+  float: left;
+  line-height: 70px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.linked {
+  background-color: #1e83ae;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+.face {
+  background-color: #3d5b94;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+.tweet {
+  background-color: #3dacdd;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+.support {
+  background-color: #6dcd9a;
+  font-size: 0.8em;
+  width: 40%;
+}
