@@ -5,7 +5,7 @@ namespace Devs2Blu.ProjetosAula.PrimeiroProjetoMVC.Services
     public class PokemonAPIService
     {
         private readonly HttpClient _httpClient;
-        private const string URL_API_PKMN = "https://pokeapi.co/api/v2/pokemon/";
+        private const string URL_API_PKMN = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic";
 
         public PokemonAPIService()
         {
