@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web", "src\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web\Devs2Blu.ProjetosAula.MVCSQLServerApp2.Web.csproj", "{42695E6E-12FF-4ABB-B57D-E8DE83E58483}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42695E6E-12FF-4ABB-B57D-E8DE83E58483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42695E6E-12FF-4ABB-B57D-E8DE83E58483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42695E6E-12FF-4ABB-B57D-E8DE83E58483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42695E6E-12FF-4ABB-B57D-E8DE83E58483}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {856EE377-4780-4C3E-8FB9-C6AF4E853643}
+	EndGlobalSection
+EndGlobal

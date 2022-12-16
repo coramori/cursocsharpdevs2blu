@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Devs - Repositório Professor\\cursocsharpdevs2blu22\\CSharpMVC\\ExercicioAPI\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
+      "projectUniqueName": "E:\\Devs2Blu\\CSharpMVC\\ExercicioAPI\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
       "projectName": "Devs2Blu.ProjetosAula.CSharpMVCRevisao",
-      "projectPath": "E:\\Devs - Repositório Professor\\cursocsharpdevs2blu22\\CSharpMVC\\ExercicioAPI\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
+      "projectPath": "E:\\Devs2Blu\\CSharpMVC\\ExercicioAPI\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj",
       "packagesPath": "C:\\Users\\Cora\\.nuget\\packages\\",
-      "outputPath": "E:\\Devs - Repositório Professor\\cursocsharpdevs2blu22\\CSharpMVC\\ExercicioAPI\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\obj\\",
+      "outputPath": "E:\\Devs2Blu\\CSharpMVC\\ExercicioAPI\\src\\Devs2Blu.ProjetosAula.CSharpMVCRevisao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -86,3 +86,34 @@ E:\Devs - Repositório Professor\cursocsharpdevs2blu22\CSharpMVC\ExercicioAPI\sr
 E:\Devs - Repositório Professor\cursocsharpdevs2blu22\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.pdb
 E:\Devs - Repositório Professor\cursocsharpdevs2blu22\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.genruntimeconfig.cache
 E:\Devs - Repositório Professor\cursocsharpdevs2blu22\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\ref\Devs2Blu.ProjetosAula.CSharpMVCRevisao.dll
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\appsettings.Development.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\appsettings.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.staticwebassets.runtime.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.exe
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.deps.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.runtimeconfig.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.dll
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\bin\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.pdb
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj.AssemblyReference.cache
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.GeneratedMSBuildEditorConfig.editorconfig
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.AssemblyInfoInputs.cache
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.AssemblyInfo.cs
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.csproj.CoreCompileInputs.cache
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.MvcApplicationPartsAssemblyInfo.cache
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.RazorAssemblyInfo.cache
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.RazorAssemblyInfo.cs
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\staticwebassets\msbuild.Devs2Blu.ProjetosAula.CSharpMVCRevisao.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\staticwebassets\msbuild.build.Devs2Blu.ProjetosAula.CSharpMVCRevisao.props
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Devs2Blu.ProjetosAula.CSharpMVCRevisao.props
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Devs2Blu.ProjetosAula.CSharpMVCRevisao.props
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\staticwebassets.pack.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\staticwebassets.build.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\staticwebassets.development.json
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\scopedcss\bundle\Devs2Blu.ProjetosAula.CSharpMVCRevisao.styles.css
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\scopedcss\projectbundle\Devs2Blu.ProjetosAula.CSharpMVCRevisao.bundle.scp.css
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.dll
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\refint\Devs2Blu.ProjetosAula.CSharpMVCRevisao.dll
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.pdb
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\Devs2Blu.ProjetosAula.CSharpMVCRevisao.genruntimeconfig.cache
+E:\Devs2Blu\CSharpMVC\ExercicioAPI\src\Devs2Blu.ProjetosAula.CSharpMVCRevisao\obj\Debug\net6.0\ref\Devs2Blu.ProjetosAula.CSharpMVCRevisao.dll
